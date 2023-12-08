@@ -1,7 +1,5 @@
 import regex as re
-
 d = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "[1-9]"]
-
 def solve(l:list):
     with open('d1_input') as f:
         s = 0
@@ -12,5 +10,4 @@ def solve(l:list):
             s += nums[0] * 10 + nums[-1]
             
         return s
-       
 print("Part1: %i\nPart2: %i" % (solve([d[-1]]), solve(d)))
